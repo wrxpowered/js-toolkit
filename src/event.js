@@ -1,4 +1,4 @@
-export default class EventBus {
+class EventBus {
   constructor() {
     this._listeners = Object.create(null);
   }
@@ -68,4 +68,9 @@ export default class EventBus {
       }
     }
   }
+}
+
+
+export {
+  EventBus,
 }
